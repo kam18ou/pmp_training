@@ -1,0 +1,29 @@
+# Repository scope: only the two code apps are committed.
+/*
+!/.gitignore
+!/app
+!/pmp_opencode
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local env files
+.env
+.env.*
+*.local
+
+# Editor
+.vscode/*
+.idea
+.DS_Store

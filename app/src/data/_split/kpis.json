@@ -1,0 +1,131 @@
+{
+ "count": 18,
+ "items": [
+  {
+   "num": 1,
+   "name": "On-Time Project Delivery Rate",
+   "formula": "`(Projects Delivered by NTP Deadline / Total Projects) * 100`",
+   "target": ">= 90%",
+   "trigger": "Drops below 80%: Audit lead times & CPM scheduling."
+  },
+  {
+   "num": 2,
+   "name": "Labor Budget Variance (CPI)",
+   "formula": "`Earned Technician Hours / Actual Technician Hours Spent`",
+   "target": ">= 0.95 to 1.05",
+   "trigger": "CPI < 0.85: Immediate site productivity intervention."
+  },
+  {
+   "num": 3,
+   "name": "Project Gross Profit Margin",
+   "formula": "`((Final Invoiced Revenue - Total Direct Costs) / Revenue) * 100`",
+   "target": ">= 35.0%",
+   "trigger": "Drops below 28%: Audit estimating labor hours & waste."
+  },
+  {
+   "num": 4,
+   "name": "Change-Order Capture Rate",
+   "formula": "`(Billed Change Order Revenue / Total Unplanned Work) * 100`",
+   "target": ">= 95%",
+   "trigger": "< 85%: Technicians giving away work; enforce 4-sentence script."
+  },
+  {
+   "num": 5,
+   "name": "First-Pass Inspection Rate",
+   "formula": "`(Inspections Passed on 1st Attempt / Total AHJ Inspections) * 100`",
+   "target": ">= 92%",
+   "trigger": "< 80%: Mandatory internal 100% pre-test audit before AHJ walk."
+  },
+  {
+   "num": 6,
+   "name": "Retention Collection Velocity",
+   "formula": "`Average Calendar Days from Substantial Completion to Retention Cash`",
+   "target": "<= 30 Days",
+   "trigger": "> 45 Days: Audit closeout dossier delivery & punch clearance."
+  },
+  {
+   "num": 7,
+   "name": "Punch-List Defect Density",
+   "formula": "`Total Client Punch Items / ($10,000 Contract Value)`",
+   "target": "<= 1.5 Items",
+   "trigger": "> 3.0 Items: Enforce internal pre-walkdown before client walk."
+  },
+  {
+   "num": 8,
+   "name": "Labor Rework Percentage",
+   "formula": "`(Hours Spent Correcting Defects / Total Project Hours) * 100`",
+   "target": "<= 3.0%",
+   "trigger": "> 5.0%: Retrain crew on termination & pathway standards."
+  },
+  {
+   "num": 9,
+   "name": "BOM Lead-Time Variance",
+   "formula": "`Promised Distributor Ship Date - Actual Shop Receipt Date`",
+   "target": "<= 0 Days",
+   "trigger": "Lead time slip > 3 days: Re-route order or deploy loaners."
+  },
+  {
+   "num": 10,
+   "name": "Unresolved Field Blockers",
+   "formula": "`Number of Active Site Issues Open > 48 Hours`",
+   "target": "0 Blockers",
+   "trigger": "Any blocker > 48h: Escalate directly to Company Owner."
+  },
+  {
+   "num": 11,
+   "name": "Technician Billable Utilization",
+   "formula": "`(Direct Billable Job Hours / Total Paid Hours) * 100`",
+   "target": ">= 82%",
+   "trigger": "< 75%: Too much unbilled shop travel or missing material runs."
+  },
+  {
+   "num": 12,
+   "name": "Closeout Dossier Turnaround",
+   "formula": "`Days from Commissioning to Complete O&M Package Delivery`",
+   "target": "<= 5 Days",
+   "trigger": "> 10 Days: Pre-build as-built drawings during trim-out phase."
+  },
+  {
+   "num": 13,
+   "name": "Bid Win Rate on Qualified RFPs",
+   "formula": "`(Awarded Proposals / Total Qualified Submitted Bids) * 100`",
+   "target": "30% - 40%",
+   "trigger": "< 20% (Too high/uncompetitive) or > 60% (Underpricing jobs!)."
+  },
+  {
+   "num": 14,
+   "name": "Safety Incident Frequency Rate",
+   "formula": "`(Recordable Safety Incidents * 200,000) / Total Man-Hours`",
+   "target": "0.00",
+   "trigger": "Any incident: Mandatory all-hands safety stand-down."
+  },
+  {
+   "num": 15,
+   "name": "SLA Recurring Conversion Rate",
+   "formula": "`(Completed Installs Converted to Annual SLA / Total Installs) * 100`",
+   "target": ">= 40%",
+   "trigger": "< 25%: Enforce delivering SLA proposal with final invoice."
+  },
+  {
+   "num": 16,
+   "name": "Customer Satisfaction (CSAT)",
+   "formula": "`Average Score on 5-Point Closeout Client Survey`",
+   "target": ">= 4.6 / 5.0",
+   "trigger": "< 4.0: PM and Owner conduct immediate client post-mortem."
+  },
+  {
+   "num": 17,
+   "name": "Permit & JHA Compliance Rate",
+   "formula": "`(High-Risk Tasks Started With Signed JHA + Permit / Total High-Risk Tasks Audited) * 100`",
+   "target": "100%",
+   "trigger": "< 100%: Mandatory safety stand-down; foreman re-training on the six permit triggers."
+  },
+  {
+   "num": 18,
+   "name": "Privacy & Hardening Sign-off Rate",
+   "formula": "`(Systems Delivered With Signed Privacy Sheet + Hardening Certificate / Total Security Systems Delivered) * 100`",
+   "target": "100%",
+   "trigger": "< 100%: Hold final delivery; audit the shop build baseline and credential management process."
+  }
+ ]
+}

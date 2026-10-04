@@ -1,0 +1,126 @@
+{
+ "count": 8,
+ "items": [
+  {
+   "num": 1,
+   "title": "THE 5 QUESTIONS BEFORE TOUCHING A WIRE                                   │",
+   "lines": [
+    "1. Is this device and location explicitly listed in the contract Scope Statement?",
+    "2. Is there approved, dry pathway (conduit/J-hooks) separated from high voltage?",
+    "3. Is 120V AC electrical power and clean grounding verified in the rack room?",
+    "4. Has the client provided confirmed static IP addresses and switch port assignments?",
+    "5. If this is extra work, do I have a signed Change Order or written PM authorization?",
+    "RULE: IF YOU ANSWER \"NO\" TO ANY QUESTION, STOP AND CALL THE PROJECT MANAGER."
+   ]
+  },
+  {
+   "num": 2,
+   "title": "THE 4-SENTENCE CHANGE SCRIPT (CAN YOU JUST...)                           │",
+   "lines": [
+    "1. \"We can absolutely take care of that for you, no problem.\" (Positive Validation)",
+    "2. \"That specific work is outside our contracted baseline scope.\" (Clear Boundary)",
+    "3. \"Let me document the exact requirements so our PM can get you a price today.\"",
+    "4. \"As soon as you sign off on that quick addendum, our crew will pull the wire.\"",
+    "RULE: NEVER ARGUE. NEVER DO IT FOR FREE. NEVER SAY \"NO.\" PIVOT TO A PAID CHANGE ORDER."
+   ]
+  },
+  {
+   "num": 3,
+   "title": "THE DAILY 5-MINUTE SITE STANDUP ROUTINE                                   │",
+   "lines": [
+    "1. WHAT ARE WE FINISHING TODAY? (Exact physical drops, devices, terminations).",
+    "2. WHAT TOOLS / MATERIALS ARE MISSING? (Check before 07:30 AM, not at 2:00 PM).",
+    "3. WHAT SITE HAZARDS ARE ACTIVE? (Ladders, scissor lifts, electrical panels, drywall).",
+    "4. WHO DO WE NEED TO COORDINATE WITH? (GC Super, electrician, client IT lead).",
+    "5. ARE THERE ANY POTENTIAL EXTRAS? (Log any client requests on the Daily Site Report)."
+   ]
+  },
+  {
+   "num": 4,
+   "title": "THE 10-POINT PRE-AHJ INSPECTION CHECKLIST                                │",
+   "lines": [
+    "[ ] 1. Approved, stamped plans and permit placard posted at panel.",
+    "[ ] 2. Battery standby and voltage-drop calculations in binder.",
+    "[ ] 3. 100% of initiating devices pre-tested (smoke, heat, duct, pull stations).",
+    "[ ] 4. Strobe synchronization verified across all visible corridors.",
+    "[ ] 5. HVAC duct detectors shut down air handlers within 3 seconds.",
+    "[ ] 6. Magnetic door holders release and latches close fully on alarm.",
+    "[ ] 7. Access control stairwell doors drop to fail-safe unlocked instantly.",
+    "[ ] 8. Primary and secondary elevator recall floors operate correctly.",
+    "[ ] 9. Central monitoring station receiving alarm, supervisory, and trouble signals.",
+    "[ ] 10. Clean 120V breaker lockout installed and labeled in red."
+   ]
+  },
+  {
+   "num": 5,
+   "title": "THE ZERO-DEFECT HANDOVER DOSSIER (RETENTION ACCELERATOR)                 │",
+   "lines": [
+    "1. Certificate of Substantial Completion (Signed by Client Executive).",
+    "2. Punch List Clearance Sheet (All items cleared within 72 hours).",
+    "3. As-Built Redline Drawings (Clean PDF showing exact device locations & cable routes).",
+    "4. Cable Certification Test Results (100% Pass Fluke PDF report).",
+    "5. Master IP / VLAN / MAC Address & Password Credentials Table.",
+    "6. Manufacturer Equipment Warranty Certificates & O&M Manuals.",
+    "7. Client Training Attendance Sign-Off Sheet.",
+    "8. Annual Maintenance SLA Agreement Proposal (Attached to final billing)."
+   ]
+  },
+  {
+   "num": 6,
+   "title": "SAFETY STOP-WORK AUTHORITY & PERMIT GATES                                 │",
+   "lines": [
+    "WORK THAT NEEDS A SIGNED PERMIT + JOB HAZARD ANALYSIS BEFORE YOU START:",
+    "1. Energized electrical work, or any circuit you must touch.",
+    "2. Hot work: soldering, brazing, grinding, open flame.",
+    "3. Work above 2 m / 6 ft: ladders, lifts, scaffolds.",
+    "4. Core drilling or ceiling work in occupied or healthcare spaces.",
+    "5. Confined space: manholes, vaults, raised floors, cable trenches.",
+    "6. Isolating any life-safety device or fire alarm zone.",
+    "STOP-WORK RULE: If it feels wrong, STOP. Anyone may stop. No blame, no cost to you.",
+    "A two-hour stop beats a twenty-year injury.",
+    "AFTER ANY INCIDENT (THE FIRST 30 MINUTES):",
+    "1. Make the area safe. Isolate. Headcount.",
+    "2. First aid. Call emergency services if needed.",
+    "3. Notify your PM and the company owner immediately.",
+    "4. Do NOT clean up or move equipment — preserve the scene.",
+    "5. Write the 1-page incident report the same day.",
+    "RULE: \"IT'S DEAD\" IS NOT A TEST. LOCK IT, VERIFY IT, OR DON'T TOUCH IT."
+   ]
+  },
+  {
+   "num": 7,
+   "title": "CYBER-HARDENING AT HANDOVER (10 CHECKS)                                   │",
+   "lines": [
+    "1. Default credentials changed — unique per device, stored in a password manager.",
+    "2. Cameras, NVRs, controllers on a dedicated VLAN, isolated from client data.",
+    "3. Firmware current on every device before delivery.",
+    "4. NTP time sync working — timestamps are what make footage evidence.",
+    "5. Unused services off; public management ports closed; remote access via VPN only.",
+    "6. Management over HTTPS/SSH only — no plain-text protocols.",
+    "7. Logging enabled, with defined retention and protected log storage.",
+    "8. Configurations backed up and restorable; backups tested once.",
+    "9. Recording retention set explicitly (30/90 days) and overwrite verified.",
+    "10. Credentials handed over with a signed receipt; client trained to change them.",
+    "RULE: A SECURITY SYSTEM YOU CAN'T HARDEN IS A DEFECT, NOT A DELIVERY."
+   ]
+  },
+  {
+   "num": 8,
+   "title": "PRIVACY & DATA PROTECTION FOR SECURITY INSTALLATIONS                      │",
+   "lines": [
+    "1. SIGNS: Clear signage at every monitored entrance and zone — purpose + controller.",
+    "2. LAWFUL BASIS: Document why recording is needed and who the data controller is.",
+    "3. RETENTION: Set an explicit clock (30/90 days). \"Until the disk is full\" is not one.",
+    "4. NEVER HERE: No cameras in restrooms, changing rooms, break rooms. Check sightlines.",
+    "5. ACCESS: Need-to-know only, named operators, unique logins, no shared admin account.",
+    "6. AUDIT TRAIL: Every export logged — who, what, when, why.",
+    "7. SUBJECT REQUESTS: A defined path and a 30-day response for \"show me my footage.\"",
+    "8. AUDIO: Usually needs its own legal basis — record only with written authority.",
+    "9. STORAGE: Encrypted at rest where supported; NVR in a locked, access-controlled room.",
+    "10. DOCUMENT IT: Signed privacy sheet at handover — your advice and the client's choices",
+    "on the record.",
+    "RULE: IF YOU CAN'T SHOW THE POLICY, YOU CAN'T DEFEND THE FOOTAGE."
+   ]
+  }
+ ]
+}

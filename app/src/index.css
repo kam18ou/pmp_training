@@ -1,0 +1,202 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource/cairo/400.css";
+@import "@fontsource/cairo/600.css";
+@import "@fontsource/cairo/700.css";
+@import "@fontsource/tajawal/400.css";
+@import "@fontsource/tajawal/700.css";
+@import "@fontsource-variable/jetbrains-mono";
+
+@theme {
+  /* Brand palette */
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+
+  /* Fonts — Latin set, Arabic override handled on [lang="ar"] below */
+  --font-sans: "Inter Variable", "Cairo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-arabic: "Cairo", "Tajawal", "Inter Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", "Cascadia Code", "Fira Code", ui-monospace, monospace;
+
+  /* Layered, higher-quality shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.25), 0 1px 3px -1px rgb(0 0 0 / 0.25);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 20px -5px rgb(0 0 0 / 0.35), 0 4px 8px -4px rgb(0 0 0 / 0.3);
+  --shadow-xl: 0 20px 40px -12px rgb(0 0 0 / 0.45), 0 8px 16px -8px rgb(0 0 0 / 0.35);
+  --shadow-glow: 0 0 24px -4px rgb(59 130 246 / 0.45), 0 4px 12px -4px rgb(59 130 246 / 0.3);
+  --shadow-glow-green: 0 0 24px -4px rgb(52 211 153 / 0.4), 0 4px 12px -4px rgb(52 211 153 / 0.25);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  font-family: var(--font-sans);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Arabic typography */
+html[lang="ar"] body,
+html[lang="ar"] input,
+html[lang="ar"] select,
+html[lang="ar"] button,
+html[lang="ar"] textarea {
+  font-family: var(--font-arabic);
+}
+html[lang="ar"] {
+  letter-spacing: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full border-2 border-slate-900;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
+
+/* Range input polish */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  @apply bg-slate-700 rounded-full;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: theme(--color-brand-500);
+  border: 3px solid rgb(15 23 42);
+  box-shadow: 0 0 0 1px theme(--color-brand-400), 0 2px 8px rgb(37 99 235 / 0.5);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: theme(--color-brand-500);
+  border: 3px solid rgb(15 23 42);
+  cursor: pointer;
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-900 border border-slate-800 rounded-xl shadow-lg;
+    box-shadow: var(--shadow-lg), inset 0 1px 0 0 rgb(255 255 255 / 0.04);
+  }
+  .card-hover {
+    @apply transition-all duration-200 hover:border-slate-600 hover:shadow-xl hover:-translate-y-0.5;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium
+           transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium
+           transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed
+           bg-brand-600 hover:bg-brand-500 text-white shadow-lg;
+    box-shadow: var(--shadow-glow);
+  }
+  .btn-primary:hover {
+    box-shadow: 0 0 32px -4px rgb(59 130 246 / 0.6), 0 8px 20px -6px rgb(37 99 235 / 0.5);
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium
+           transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed
+           bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium
+           transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed
+           text-slate-300 hover:bg-slate-800 hover:text-white;
+  }
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs font-semibold;
+  }
+  .badge-blue {
+    @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs font-semibold
+           bg-brand-500/15 text-brand-300 border border-brand-500/30;
+  }
+  .badge-green {
+    @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs font-semibold
+           bg-emerald-500/15 text-emerald-300 border border-emerald-500/30;
+  }
+  .badge-amber {
+    @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs font-semibold
+           bg-amber-500/15 text-amber-300 border border-amber-500/30;
+  }
+  .badge-red {
+    @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs font-semibold
+           bg-red-500/15 text-red-300 border border-red-500/30;
+  }
+  .badge-slate {
+    @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs font-semibold
+           bg-slate-700/50 text-slate-300 border border-slate-600/50;
+  }
+  .section-title {
+    @apply text-xl font-bold text-white;
+  }
+  .label {
+    @apply text-sm font-medium text-slate-400;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-300 via-brand-400 to-emerald-300 bg-clip-text text-transparent;
+  }
+}
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-slide-in {
+  animation: slide-in 0.25s ease-out;
+}
+
+@keyframes pulse-success {
+  0%, 100% { background-color: color-mix(in srgb, theme(--color-emerald-500) 15%, transparent); }
+  50% { background-color: color-mix(in srgb, theme(--color-emerald-500) 30%, transparent); }
+}
+.animate-pulse-success {
+  animation: pulse-success 1.2s ease-in-out 2;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
